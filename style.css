@@ -1,4 +1,67 @@
+/*-------- Global --------*/
+@font-face {
+	src: url(assets/font/CurwenSans.ttf);
+	font-family: CurwenSans;
+}
+
 * {
-	background-color: black;
-	color: azure;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+html {
+	font-family: CurwenSans;
+	font-weight: 100;
+}
+
+body {
+	width: 77%;
+	margin: auto;
+	background-image: url(assets/img/star-background.jpg);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	color: white;
+}
+
+h2 {
+	font-size: 35px;
+	font-weight: 400;
+	color: white;
+}
+
+h5 {
+	font-size: 20px;
+	margin-top: 10px;
+	color: unset;
+}
+
+p {
+	color: white;
+	font-weight: 100;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+/*-------- Nav --------*/
+.navLink {
+	display: flex;
+	align-items: center;
+	height: 100px;
 }
