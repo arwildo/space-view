@@ -14,21 +14,16 @@
 	background: transparent;
 }
 
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
 html {
 	font-family: CurwenSans;
 	font-weight: 100;
 }
 
 body {
-	width: 77%;
+	width: 75%;
 	margin: auto;
 	background-image: url(assets/img/star-background.jpg);
+	background-color: black;
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -60,8 +55,64 @@ p {
 }
 
 /*-------- Nav --------*/
+.nav {
+	float: left;
+	width: 100%;
+	padding: 15px 0;
+}
+
+.navContainer {
+	max-width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.navLogo {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.navLogo a {
+	color: white;
+	text-decoration: none;
+}
+
 .navLink {
-	display: flex;
-	align-items: center;
-	height: 100px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.navLink a {
+	color: white;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+/*-------- Landing --------*/
+.landing {
+	height: 120vh;
+	position: relative;
+}
+
+.landing::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.landingWrapper {
+	justify-content: space-between;
+}
+
+.landingB {
+	text-align: center;
+	display: block;
+}
+
+.landingB img {
+	width: 14em;
+	margin-top: 35%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
