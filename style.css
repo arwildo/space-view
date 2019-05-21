@@ -27,6 +27,7 @@ body {
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 h1 {
@@ -75,7 +76,7 @@ p {
 }
 
 .navLogo img {
-	width: 70%;
+	width: 80%;
 }
 
 .navLink {
@@ -112,7 +113,7 @@ p {
 
 .landingB img {
 	width: 14em;
-	margin-top: 35%;
+	margin-top: 25%;
 	margin-left: 8%;
 	margin-right: 8%;
 }
