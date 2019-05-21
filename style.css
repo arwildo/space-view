@@ -32,13 +32,13 @@ body {
 h1 {
 	font-size: 40px;
 	font-weight: 400;
-	color: white;
+	color: #f0f0f0;
 }
 
 h2 {
 	font-size: 35px;
 	font-weight: 400;
-	color: white;
+	color: #f0f0f0;
 }
 
 h5 {
@@ -48,7 +48,7 @@ h5 {
 }
 
 p {
-	color: white;
+	color: #f0f0f0;
 	font-weight: 100;
 	margin-top: 10px;
 	font-size: 20px;
@@ -59,6 +59,7 @@ p {
 	float: left;
 	width: 100%;
 	padding: 15px 0;
+	margin-top: 15px;
 }
 
 .navContainer {
@@ -73,9 +74,8 @@ p {
 	left: 0;
 }
 
-.navLogo a {
-	color: white;
-	text-decoration: none;
+.navLogo img {
+	width: 70%;
 }
 
 .navLink {
@@ -84,15 +84,15 @@ p {
 }
 
 .navLink a {
-	color: white;
+	color: #f0f0f0;
 	text-decoration: none;
 	margin-left: 20px;
+	font-size: 14px;
 }
 
 /*-------- Landing --------*/
 .landing {
 	height: 120vh;
-	position: relative;
 }
 
 .landing::after {
@@ -113,6 +113,6 @@ p {
 .landingB img {
 	width: 14em;
 	margin-top: 35%;
-	margin-left: 3%;
-	margin-right: 3%;
+	margin-left: 8%;
+	margin-right: 8%;
 }
