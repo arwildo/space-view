@@ -202,10 +202,17 @@ p {
 	border-radius: 1%;
 	position: relative;
 	margin: 0 auto;
+	opacity: 0.8;
 }
 
-.footer p {
-	color: white;
+.footerText {
+	position: absolute;
+	margin-top: 7em;
+	left: 30px;
+}
+
+.footerText p {
+	color: #afafaf;
 }
 
 .copyright {
@@ -242,4 +249,9 @@ p {
 	bottom: 5%;
 	right: 5%;
 	position: absolute;
+}
+
+#copyrightLast a {
+	text-decoration: none;
+	color: rgb(143, 143, 143);
 }
