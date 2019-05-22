@@ -196,7 +196,35 @@ p {
 
 /*-------- Footer --------*/
 .footer {
-	width: 100%;
-	color: black;
+	width: 90%;
+	background-color: black;
 	height: 20em;
+	opacity: 1;
+	border-radius: 1%;
+	position: relative;
+}
+
+.copyright {
+	position: absolute;
+	bottom: 5%;
+	left: 10px;
+}
+
+.copyright img {
+	width: 100px;
+}
+
+.listStyle {
+	margin-left: 10px;
+	display: flex;
+	list-style: none;
+}
+
+#copyrightLast {
+	color: rgb(177, 177, 177);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 15px;
+	bottom: 5%;
+	right: 5%;
+	position: absolute;
 }
