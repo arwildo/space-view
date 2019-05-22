@@ -14,6 +14,12 @@
 	background: transparent;
 }
 
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 html {
 	font-family: CurwenSans;
 	font-weight: 100;
@@ -116,4 +122,49 @@ p {
 	margin-top: 25%;
 	margin-left: 8%;
 	margin-right: 8%;
+}
+
+/*-------- Post 1 --------*/
+.post1 > .postText {
+	float: left;
+}
+.postText {
+	margin-top: 2em;
+}
+
+.post1 img {
+	float: right;
+	width: 250px;
+	margin-right: 10%;
+}
+
+/*-------- Post 2 --------*/
+.post2 {
+	margin-top: 18%;
+}
+
+.post2 > .postText {
+	float: right;
+}
+
+.post2 img {
+	float: left;
+	width: 380px;
+	margin-top: 3em;
+}
+
+/*-------- Post 3 --------*/
+.post3 {
+	margin-top: 18%;
+}
+
+.post3 > .postText {
+	float: left;
+}
+
+.post3 img {
+	float: right;
+	width: 320px;
+	margin-right: 5%;
+	margin-top: 5em;
 }
