@@ -171,6 +171,13 @@ p {
 	float: right;
 	width: 250px;
 	margin-right: 10%;
+	transition: transform .9s;
+}
+
+.post1 img:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 /*-------- Post 2 --------*/
@@ -186,6 +193,13 @@ p {
 	float: left;
 	width: 380px;
 	margin-top: 3em;
+	transition: transform .9s;
+}
+
+.post2 img:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 /*-------- Post 3 --------*/
@@ -201,6 +215,13 @@ p {
 	float: right;
 	width: 320px;
 	margin-top: 5em;
+	transition: transform .9s;
+}
+
+.post3 img:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 /*-------- News --------*/
