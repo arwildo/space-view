@@ -118,45 +118,18 @@ p {
 	display: block;
 }
 
-.moonMove img {
+.landingB img {
 	width: 14em;
 	margin-top: 25%;
 	margin-left: 8%;
 	margin-right: 8%;
-	box-sizing: border-box;
-	border-radius: 50%;
-	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+	transition: transform .9s;
 }
 
-.marsMove img {
-	width: 14em;
-	margin-top: 25%;
-	margin-left: 8%;
-	margin-right: 8%;
-	box-sizing: border-box;
-	border-radius: 50%;
-	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
-	transform: translatey(0px);
-	animation: float 8s ease-in-out infinite;
-}
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.8);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
-		transform: translatey(0px);
-	}
+.landing img:hover {
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 /*-------- Post 1 --------*/
@@ -171,15 +144,12 @@ p {
 	float: right;
 	width: 250px;
 	margin-right: 10%;
-	transition: transform .9s;
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+	transform: translatey(0px);
+	animation: float 7s ease-in-out infinite;
 }
-
-.post1 img:hover {
-	-ms-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
-
 /*-------- Post 2 --------*/
 .post2 {
 	margin-top: 18%;
@@ -193,13 +163,11 @@ p {
 	float: left;
 	width: 380px;
 	margin-top: 3em;
-	transition: transform .9s;
-}
-
-.post2 img:hover {
-	-ms-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+	transform: translatey(0px);
+	animation: float 12s ease-in-out infinite;
 }
 
 /*-------- Post 3 --------*/
@@ -215,13 +183,28 @@ p {
 	float: right;
 	width: 320px;
 	margin-top: 5em;
-	transition: transform .9s;
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+	transform: translatey(0px);
+	animation: float 9s ease-in-out infinite;
 }
 
-.post3 img:hover {
-	-ms-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
+/*-------- Posts effect --------*/
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.8);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+		transform: translatey(0px);
+	}
 }
 
 /*-------- News --------*/
