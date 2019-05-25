@@ -11,59 +11,37 @@ $(function () {
 
 // typing
 
-var TxtType = function (el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
+document.addEventListener('DOMContentLoaded', function (event) {
+    var dataText = ["SPACE VIEW",
+        "Map to view space objects",
+        "Click on the Moon or Mars to begin..."
+    ];
 
-TxtType.prototype.tick = function () {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+    function typeWriter(text, i, fnCallback) {
 
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
+        if (i < (text.length)) {
+            document.getElementById("typing").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+            setTimeout(function () {
+                typeWriter(text, i + 1, fnCallback)
+            }, 100);
+        }
 
-    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
-
-    setTimeout(function () {
-        that.tick();
-    }, delta);
-};
-
-window.onload = function () {
-    var elements = document.getElementsByClassName('typing');
-    for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
+        else if (typeof fnCallback == 'function') {
+            setTimeout(fnCallback, 3000);
         }
     }
-    // injects css
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typing > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
+
+    function StartTextAnimation(i) {
+        if (typeof dataText[i] == 'undefined') {
+            setTimeout(function () {
+                StartTextAnimation(0);
+            }, 20000);
+        }
+        if (i < dataText[i].length) {
+            typeWriter(dataText[i], 0, function () {
+                StartTextAnimation(i + 1);
+            });
+        }
+    }
+    StartTextAnimation(0);
+});

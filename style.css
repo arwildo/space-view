@@ -136,12 +136,24 @@ p {
 	border-radius: 100%;
 }
 
-.typing {
-	color: #e8e5e5;
+#typing {
+	color: white;
+	opacity: 0.8;
 	text-decoration: none;
 	text-align: center;
 	display: block;
 	padding-top: 27%;
+}
+
+span {
+	border-right: .05em solid;
+	animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+	50% {
+		border-color: transparent;
+	}
 }
 /*-------- Post 1 --------*/
 .post1 > .postText {
