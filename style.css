@@ -270,14 +270,14 @@ span {
 
 .newsWr {
 	padding: 3em;
-	padding-top: 1em;
+	padding-top: 0.5em;
 }
 
 .newsWr img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 350px;
+	width: 400px;
 }
 /*-------- Footer --------*/
 .footer {
