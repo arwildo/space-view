@@ -69,6 +69,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
 	background-color: darkgrey;
+	border-radius: 1px;
 }
 
 div::-webkit-scrollbar {
@@ -77,6 +78,7 @@ div::-webkit-scrollbar {
 
 div::-webkit-scrollbar-thumb {
 	background-color: darkgrey;
+	border-radius: 50px;
 }
 
 /*-------- Nav --------*/
@@ -247,7 +249,7 @@ span {
 .news {
 	background-color: white;
 	width: 100%;
-	height: 35em;
+	height: 39.7em;
 	margin: 20% auto;
 	border-radius: 1%;
 	opacity: 0.8;
