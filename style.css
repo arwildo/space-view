@@ -253,6 +253,7 @@ span {
 	opacity: 0.8;
 	border-left: 6px solid #ffb042;
 	overflow: scroll;
+	overflow-x: hidden;
 }
 
 .news h1 {
