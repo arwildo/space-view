@@ -120,7 +120,7 @@ p {
 
 .landingB img {
 	width: 14em;
-	margin-top: 25%;
+	margin-top: 5%;
 	margin-left: 8%;
 	margin-right: 8%;
 	transition: transform .9s;
@@ -130,8 +130,19 @@ p {
 	-ms-transform: scale(1.2);
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
+	-moz-box-shadow: 0 0 30px white;
+	-webkit-box-shadow: 0 0 30px white;
+	box-shadow: 0 0 30px white;
+	border-radius: 100%;
 }
 
+.typing {
+	color: #e8e5e5;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding-top: 27%;
+}
 /*-------- Post 1 --------*/
 .post1 > .postText {
 	float: left;
@@ -261,7 +272,6 @@ p {
 
 .copyright img {
 	width: 100px;
-	margin-right: 8px;
 	margin-top: 8px;
 }
 
