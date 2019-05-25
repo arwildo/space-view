@@ -118,9 +118,14 @@ p {
 	display: block;
 }
 
+#typing {
+	padding-top: 5em;
+	color: #bbbbbb;
+}
+
 .landingB img {
 	width: 14em;
-	margin-top: 5%;
+	margin-top: 10%;
 	margin-left: 8%;
 	margin-right: 8%;
 	transition: transform .9s;
@@ -134,15 +139,6 @@ p {
 	-webkit-box-shadow: 0 0 30px white;
 	box-shadow: 0 0 30px white;
 	border-radius: 100%;
-}
-
-#typing {
-	color: white;
-	opacity: 0.8;
-	text-decoration: none;
-	text-align: center;
-	display: block;
-	padding-top: 27%;
 }
 
 span {
@@ -238,7 +234,7 @@ span {
 	margin: 20% auto;
 	border-radius: 1%;
 	opacity: 0.8;
-	border-left: 6px solid #027bff;
+	border-left: 6px solid #ffb042;
 }
 
 .news h1 {
