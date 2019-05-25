@@ -71,6 +71,14 @@ body::-webkit-scrollbar-thumb {
 	background-color: darkgrey;
 }
 
+div::-webkit-scrollbar {
+	width: 10px;
+}
+
+div::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+}
+
 /*-------- Nav --------*/
 .nav {
 	float: left;
@@ -244,6 +252,7 @@ span {
 	border-radius: 1%;
 	opacity: 0.8;
 	border-left: 6px solid #ffb042;
+	overflow: scroll;
 }
 
 .news h1 {
@@ -257,9 +266,16 @@ span {
 }
 
 .newsWr {
-	padding: 5%;
+	padding: 3em;
+	padding-top: 1em;
 }
 
+.newsWr img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+}
 /*-------- Footer --------*/
 .footer {
 	width: 100%;
