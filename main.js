@@ -1,12 +1,12 @@
 // scroll
-
-$(function () {
-    $('a').on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(e.target).attr("href")).offset().top
-        }, 2000);
-    });
+$('a[href^="#"]').on('click', function (event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 3000);
+    }
 });
 
 // typing
