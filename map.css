@@ -146,10 +146,10 @@ button.back:after {
 	width: 0;
 	height: 0;
 	display: block;
-	border-top: 20px solid #ffb042;
-	border-bottom: 20px solid #ffb042;
+	border-top: 20px solid #afafaf;
+	border-bottom: 20px solid #afafaf;
 	border-right: 16px solid transparent;
-	border-left: 20px solid #ffb042;
+	border-left: 20px solid #afafaf;
 	position: absolute;
 	opacity: 0.6;
 	left: 0;
@@ -166,7 +166,7 @@ button.back:after {
 	margin-top: 2em;
 	border-radius: 1%;
 	opacity: 0.8;
-	border-left: 6px solid #ffb042;
+	border-left: 6px solid #afafaf;
 	overflow: scroll;
 	overflow-x: hidden;
 }
