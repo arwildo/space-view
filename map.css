@@ -165,33 +165,16 @@ button.back:after {
 	height: 39.7em;
 	margin-top: 2em;
 	border-radius: 1%;
-	opacity: 0.8;
 	border-left: 6px solid #afafaf;
 	overflow: scroll;
 	overflow-x: hidden;
 }
 
-.map h1 {
-	color: black;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#moonTrek {
+	height: 1000px;
+	width: 800px;
 }
 
-.map p {
-	color: black;
-	font-weight: 500;
-}
-
-.mapWr {
-	padding: 3em;
-	padding-top: 0.5em;
-}
-
-.mapWr img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 400px;
-}
 /*-------- Footer --------*/
 .footer {
 	width: 100%;
