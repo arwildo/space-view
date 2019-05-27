@@ -90,7 +90,7 @@ div::-webkit-scrollbar-thumb {
 }
 
 .navContainer {
-	max-width: 90%;
+	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
 }
