@@ -72,3 +72,6 @@ $.ajax({
         $("#apod_title").text(result.title);
     }
 });
+window.onerror = function () {
+    return true;
+}

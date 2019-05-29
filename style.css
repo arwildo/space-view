@@ -271,6 +271,7 @@ span {
 .newsWr {
 	padding: 3em;
 	padding-top: 0.5em;
+	text-align: justify;
 }
 
 .newsWr img {
@@ -349,7 +350,7 @@ span {
 @media (min-width: 800px) and (max-width: 1024px) {
 	.landingB img {
 		width: 12em;
-		padding-top: 5em;
+		margin-top: 5em;
 	}
 	.landing {
 		height: 70vh;
@@ -385,7 +386,7 @@ span {
 @media (width: 768px) {
 	.landingB img {
 		width: 12em;
-		padding-top: 5em;
+		margin-top: 5em;
 	}
 	.landing {
 		height: 70vh;
@@ -429,7 +430,7 @@ span {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	.landingB img {
 		width: 12em;
-		padding-top: 5em;
+		margin-top: 5em;
 	}
 	.landing {
 		height: 80vh;
@@ -465,10 +466,10 @@ span {
 @media (min-width: 481px) and (max-width: 767px) {
 	.landingB img {
 		width: 12em;
-		padding-top: 5em;
+		margin-top: 3em;
 	}
 	.landing {
-		height: 70vh;
+		height: 80%;
 	}
 	#typing {
 		font-size: 2em;
@@ -501,10 +502,10 @@ span {
 @media (min-width: 360px) and (max-width: 480px) {
 	.landingB img {
 		width: 12em;
-		padding-top: 1em;
+		margin-top: 3em;
 	}
 	.landing {
-		height: 100vh;
+		height: 80%;
 	}
 	#typing {
 		font-size: 20px;
@@ -524,17 +525,23 @@ span {
 		width: 250px;
 		margin-top: 100px;
 	}
+	.newsWr {
+		padding: 2%;
+	}
 	.newsWr img {
 		width: 200px;
 	}
 	.navLogo img {
 		width: 130px;
 	}
-	.newsWr {
-		font-size: 12px;
-	}
 	.copyright {
 		display: none;
+	}
+	.news {
+		margin: 0%;
+	}
+	.newsWr h1 {
+		font-size: 30px;
 	}
 }
 /* 
@@ -545,10 +552,10 @@ span {
 @media (width: 320px) {
 	.landingB img {
 		width: 12em;
-		padding-top: 1em;
+		margin-top: 1em;
 	}
 	.landing {
-		height: 120vh;
+		height: 80%;
 	}
 	#typing {
 		font-size: 18px;
@@ -568,19 +575,22 @@ span {
 		width: 250px;
 		margin-top: 100px;
 	}
+	.newsWr {
+		padding: 2%;
+	}
 	.newsWr img {
 		width: 200px;
 	}
 	.navLogo img {
-		width: 110px;
-	}
-	.newsWr {
-		font-size: 12px;
+		width: 130px;
 	}
 	.copyright {
 		display: none;
 	}
-	.navLink a {
-		font-size: 11px;
+	.news {
+		margin: 0%;
+	}
+	.newsWr h1 {
+		font-size: 30px;
 	}
 }
