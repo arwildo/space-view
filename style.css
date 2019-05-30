@@ -252,10 +252,10 @@ span {
 	height: 39.7em;
 	margin: 20% auto;
 	border-radius: 1%;
-	opacity: 0.8;
 	border-left: 6px solid #afafaf;
 	overflow: scroll;
 	overflow-x: hidden;
+	opacity: 0.8;
 }
 
 .news h1 {
@@ -278,8 +278,9 @@ span {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
+	width: 700px;
 }
+
 /*-------- Footer --------*/
 .footer {
 	width: 100%;
