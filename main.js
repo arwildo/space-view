@@ -10,7 +10,6 @@ $('a[href^="#"]').on('click', function (event) {
 });
 
 // typing
-
 document.addEventListener('DOMContentLoaded', function (event) {
     var dataText = ["SPACE VIEW",
         "Map to view space objects",
@@ -75,15 +74,4 @@ $.ajax({
 window.onerror = function () {
     return true;
 }
-$("body").on('mouseover', 'a', function (e) {
-    var $link = $(this),
-        href = $link.attr('href') || $link.data("href");
 
-    $link.off('click.chrome');
-    $link.on('click.chrome', function () {
-        window.location.href = href;
-    })
-        .attr('data-href', href)
-        .css({ cursor: 'pointer' })
-        .removeAttr('href');
-});
