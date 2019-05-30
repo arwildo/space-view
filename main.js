@@ -75,3 +75,4 @@ $.ajax({
 window.onerror = function () {
     return true;
 }
+

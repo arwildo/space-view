@@ -64,23 +64,19 @@ p {
 
 /*-------- Scroll bar --------*/
 body::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
 }
-
 body::-webkit-scrollbar-thumb {
-	background-color: darkgrey;
-	border-radius: 1px;
+	background-color: #afafaf;
+	border-radius: 5px;
 }
-
 div::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
 }
-
 div::-webkit-scrollbar-thumb {
-	background-color: darkgrey;
-	border-radius: 50px;
+	background-color: #afafaf;
+	border-radius: 5px;
 }
-
 /*-------- Nav --------*/
 .nav {
 	float: left;
