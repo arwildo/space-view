@@ -7,6 +7,6 @@ Website to explore the wonders of space objects like mooon and mars, and to lear
 
 * HTML
 * CSS
-* [SASS](https://sass-lang.com/) - CSS Pre-Processor
-* [Esri](https://www.esri.com/en-us/home) - Layer rendering API
-* [NASA APIs](https://moontrek.jpl.nasa.gov/TrekAPI/) - Layers used in application
+* JavaScript
+* Jquery
+* NASA APIs
