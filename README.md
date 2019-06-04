@@ -1,2 +1,16 @@
-# space-view
-Map to view space objects
+# Space View
+Website to explore the wonders of space objects like mooon and mars, and to learn information about space with NASA daily news.
+
+:rocket: [SPACEV - Space View](https://www.arwildo.space/space-view/)
+
+## Built With
+
+* HTML
+* CSS
+* JavaScript
+* Jquery
+* NASA APIs
+
+## Contributors
+
+* **Arwildo** - *Initial work* - [arwildo.space](http://www.arwildo.space/)
