@@ -526,7 +526,7 @@ span {
 		padding: 2%;
 	}
 	.newsWr img {
-		width: 200px;
+		width: 280px;
 	}
 	.navLogo img {
 		width: 130px;
@@ -538,7 +538,10 @@ span {
 		margin: 0%;
 	}
 	.newsWr h1 {
-		font-size: 30px;
+		font-size: 25px;
+	}
+	.newsWr p {
+		font-size: 17px;
 	}
 }
 /* 
@@ -576,7 +579,7 @@ span {
 		padding: 2%;
 	}
 	.newsWr img {
-		width: 200px;
+		width: 230px;
 	}
 	.navLogo img {
 		width: 130px;
@@ -588,6 +591,9 @@ span {
 		margin: 0%;
 	}
 	.newsWr h1 {
-		font-size: 30px;
+		font-size: 23px;
+	}
+	.newsWr p {
+		font-size: 15px;
 	}
 }
