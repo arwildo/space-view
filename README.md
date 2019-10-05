@@ -4,7 +4,7 @@ Website to explore the wonders of space objects like moon and mars, and to learn
 :rocket: [SPACEV - Space View](https://www.arwildo.space/space-view/)
 
 ## Preview
-![alt text](https://raw.githubusercontent.com/arwildo/space-view/master/preview/Space%20view.png "Website Preview")
+![alt text](https://www.arwildo.space/assets/images/Space%20view.png "Website Preview")
 
 ## Built With
 
