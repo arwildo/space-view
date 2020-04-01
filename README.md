@@ -5,7 +5,9 @@ Website to explore the wonders of space objects like moon and mars, and to learn
 
 
 ## Preview
-![alt text](https://www.arwildo.space/assets/images/Space%20view.png "Website Preview")
+<p align="center">
+  <img src="https://www.arwildo.space/assets/images/Space%20view.png?raw=true" alt="Website Preview"/>
+</p>
 
 
 ## Built With
