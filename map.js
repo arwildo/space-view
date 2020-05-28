@@ -1,1 +1,1 @@
-$("#moonTrek").html('<object data="https://trek.nasa.gov/moon"/>'); $("#marsTrek").html('<object data="https://trek.nasa.gov/mars"/>');
+$("#moonTrek").html('<object data="https://%0d.trek.nasa.gov/moon"/>'); $("#marsTrek").html('<object data="https://%0d.trek.nasa.gov/mars"/>');
