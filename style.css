@@ -1,7 +1,7 @@
 /*-------- Global --------*/
 @font-face {
-	src: url(assets/fonts/CurwenSans.ttf);
-	font-family: CurwenSans;
+	src: url(assets/fonts/D-DIN.woff2);
+	font-family: d-din;
 }
 
 * {
@@ -21,7 +21,7 @@
 }
 
 html {
-	font-family: CurwenSans;
+	font-family: d-din;
 	font-weight: 100;
 }
 
@@ -59,7 +59,7 @@ p {
 	font-weight: 100;
 	margin-top: 10px;
 	font-size: 20px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: d-din, Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*-------- Scroll bar --------*/
@@ -250,7 +250,7 @@ span {
 
 .news h1 {
 	color: black;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: d-din, Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .news p {
@@ -320,7 +320,7 @@ span {
 
 #copyrightLast {
 	color: rgb(143, 143, 143);
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: d-din, Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 15px;
 	bottom: 5%;
 	right: 5%;
