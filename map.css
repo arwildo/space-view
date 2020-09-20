@@ -160,7 +160,7 @@ button.marsBtn {
 	text-align: left;
 	padding-right: 12px;
 	box-sizing: border-box;
-	background-image: url("https://www.arwildo.space/space-view/assets/img/mars.png");
+	background-image: url("space-view/assets/img/mars.png");
 	background-size: 150%;
 	background-position: center;
 	color: whitesmoke;
@@ -189,7 +189,7 @@ button.moonBtn {
 	text-align: left;
 	padding-right: 12px;
 	box-sizing: border-box;
-	background-image: url("https://www.arwildo.space/space-view/assets/img/moon.png");
+	background-image: url("space-view/assets/img/moon.png");
 	background-size: 150%;
 	background-position: center;
 	color: whitesmoke;
