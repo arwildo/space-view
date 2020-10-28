@@ -1,12 +1,12 @@
 # Space View
 Website to explore the wonders of space objects like moon and mars, and to learn information about space with NASA daily news.
 
-:rocket: [SPACEV - Space View](https://arwildo.github.io/space-view/)
+:rocket: [SPACEV - Space View](https://arwildo.com/space-view/)
 
 
 ## Preview
 <p align="center">
-  <img src="https://arwildo.github.io/assets/images/Space%20view.png?raw=true" alt="Website Preview"/>
+  <img src="https://arwildo.com/assets/images/Space%20view.png?raw=true" alt="Website Preview"/>
 </p>
 
 
