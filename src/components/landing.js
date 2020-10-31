@@ -9,6 +9,10 @@ import MoonBG from './assets/img/moonbg.png';
 import MarsBG from './assets/img/marsbg.png';
 import SkyBG from './assets/img/skybg.png';
 
+import MoonIcon from './assets/img/moon.png';
+import MarsIcon from './assets/img/mars.png';
+import SkyIcon from './assets/img/sky.png';
+
 export default function() {
   
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -226,6 +230,7 @@ export default function() {
 										href="#"
 										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
 									>
+										<img className="w-6 mr-3" src={MoonIcon} />
 										Moon
 									</a>
 								</div>
@@ -234,6 +239,7 @@ export default function() {
 										href="#"
 										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
 									>
+										<img className="w-6 mr-3" src={MarsIcon} />
 										Mars
 									</a>
 								</div>
@@ -242,6 +248,7 @@ export default function() {
 										href="#"
 										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
 									>
+										<img className="w-6 mr-3" src={SkyIcon} />
 										Sky
 									</a>
 								</div>
