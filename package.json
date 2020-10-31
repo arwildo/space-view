@@ -1,6 +1,6 @@
 {
   "name": "space-view",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Web app to view space objects.",
   "main": "index.js",
   "scripts": {
@@ -51,6 +51,7 @@
     "@headlessui/react": "^0.2.0",
     "@tailwindcss/ui": "^0.6.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-slideshow-image": "^3.3.0"
   }
 }

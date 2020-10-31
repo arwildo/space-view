@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 
 import Logo from './assets/img/logo.png';
 import MoonBG from './assets/img/moonbg.png';
@@ -20,12 +21,6 @@ export default function() {
   };
 
   const autoplay = true;
-
-  const style = {
-    textAlign: "center",
-    background: "teal",
-    padding: "200px 0"
-  }
 
 	return (
 		<div className="relative bg-white overflow-hidden">

@@ -4,10 +4,9 @@ import "./styles.css";
 
 import Landing from "./components/landing";
 
+const Index = () => {
+	return <Landing />
+};
+
 const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <React.StrictMode>
-    <Landing />
-  </React.StrictMode>,
-  rootElement
-);
+ReactDOM.render(<Index />, rootElement);
