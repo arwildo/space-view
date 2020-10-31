@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
-import { Menu, Transition } from '@headlessui/react';
+import { Transition } from '@headlessui/react';
+import { Slide } from 'react-slideshow-image';
+
 import Logo from './assets/img/logo.png';
-import Moon from './assets/img/moon.png';
 import MoonBG from './assets/img/moonbg.png';
 import MarsBG from './assets/img/marsbg.png';
 import SkyBG from './assets/img/skybg.png';
@@ -10,6 +11,22 @@ import SkyBG from './assets/img/skybg.png';
 export default function() {
   
 	const [ isOpen, setIsOpen ] = useState(false);
+
+  const slideRef = useRef();
+
+  const properties = {
+    arrows: false,
+    pauseOnHover: false
+  };
+
+  const autoplay = true;
+
+  const style = {
+    textAlign: "center",
+    background: "teal",
+    padding: "200px 0"
+  }
+
 	return (
 		<div className="relative bg-white overflow-hidden">
 			<div className="max-w-screen-xl mx-auto">
@@ -202,18 +219,17 @@ export default function() {
 							<h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
 								Map to view
 								<br className="xl:hidden" />
-								<span className="text-blue-500">Space objects</span>
+								<span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-teal-400 font-black">Space objects</span>
 							</h2>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Web app to explore the wonders of space objects like moon, mars,and night sky. 
+                Web app to explore the wonders of space objects like moon, mars, and the night sky. 
                 Built with Nasa and Google APIs.
-
 							</p>
 							<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 								<div className="mt-3 sm:mt-0 sm:ml-3">
 									<a
 										href="#"
-										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
 									>
 										Moon
 									</a>
@@ -221,7 +237,7 @@ export default function() {
 								<div className="mt-3 sm:mt-0 sm:ml-3">
 									<a
 										href="#"
-										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
 									>
 										Mars
 									</a>
@@ -229,7 +245,7 @@ export default function() {
 								<div className="mt-3 sm:mt-0 sm:ml-3">
 									<a
 										href="#"
-										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
 									>
 										Sky
 									</a>
@@ -239,12 +255,22 @@ export default function() {
 					</main>
 				</div>
 			</div>
-			<div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-				<img
-					className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-					src={MarsBG}
-				/>
-			</div>
+      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-full">
+        <Slide autoplay={autoplay} ref={slideRef} {...properties}>
+          <img
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src={MoonBG}
+          />
+          <img
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src={MarsBG}
+          />
+          <img
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src={SkyBG}
+          />
+        </Slide>
+     </div>
 		</div>
 	);
 }
