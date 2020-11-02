@@ -8,23 +8,26 @@ import Logo from './assets/img/logo.png';
 import MoonBG from './assets/img/moonbg.png';
 import MarsBG from './assets/img/marsbg.png';
 import SkyBG from './assets/img/skybg.png';
-
 import MoonIcon from './assets/img/moon.png';
 import MarsIcon from './assets/img/mars.png';
 import SkyIcon from './assets/img/sky.png';
 
-export default function() {
-  
+import Maps from './maps'
+
+export default function(props) {
+  // Landing
 	const [ isOpen, setIsOpen ] = useState(false);
 
   const slideRef = useRef();
-
   const properties = {
     arrows: false,
     pauseOnHover: false
   };
-
   const autoplay = true;
+
+
+  // Maps 
+	const [ mapsOpen, setMapsOpen ] = useState(true);
 
 	return (
 		<div className="relative bg-white overflow-hidden">
@@ -101,7 +104,7 @@ export default function() {
 									Google API
 								</a>
 								<a
-									href="#"
+									href="https://arwildo.com"
 									className="ml-8 font-medium text-blue-500 hover:text-blue-900 transition duration-150 ease-in-out"
 								>
 									Author
@@ -201,7 +204,7 @@ export default function() {
 										</div>
 										<div>
 											<a
-												href="#"
+												href="https://arwildo.com"
 												className="block w-full px-5 py-3 text-center font-medium text-blue-500 bg-gray-50 hover:bg-gray-100 hover:text-blue-600 focus:outline-none focus:bg-gray-100 focus:text-blue-600 transition duration-150 ease-in-out"
 												role="menuitem"
 											>
@@ -213,6 +216,9 @@ export default function() {
 							</div>
 						)}
 					</Transition>
+
+          <Maps mapsOpen={mapsOpen} setMapsOpen={setMapsOpen} />
+
 					<main className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
 						<div className="sm:text-center lg:text-left">
 							<h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
