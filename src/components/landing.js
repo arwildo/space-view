@@ -113,16 +113,6 @@ export default function(props) {
 						</nav>
 					</div>
 
-					{/*
-          Mobile menu, show/hide based on menu open state.
-          Entering: "duration-150 ease-out"
-          From: "opacity-0 scale-95"
-          To: "opacity-100 scale-100"
-          Leaving: "duration-100 ease-in"
-          From: "opacity-100 scale-100"
-          To: "opacity-0 scale-95"
-          */}
-
 					<Transition
 						show={isOpen}
 						enter="transition ease-out duration-100 transform"
@@ -132,6 +122,7 @@ export default function(props) {
 						leaveFrom="opacity-100 scale-100"
 						leaveTo="opacity-0 scale-95"
 					>
+
 						{isOpen && (
 							<div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
 								<div className="rounded-lg shadow-md">
@@ -266,15 +257,15 @@ export default function(props) {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-full">
         <Slide autoplay={autoplay} ref={slideRef} {...properties}>
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full xl:h-full"
             src={MoonBG}
           />
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full xl:h-full"
             src={MarsBG}
           />
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full xl:h-full"
             src={SkyBG}
           />
         </Slide>

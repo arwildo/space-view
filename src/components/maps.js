@@ -1,9 +1,17 @@
 import React from 'react';
 import { Transition } from '@headlessui/react';
+import Iframe from 'react-iframe';
 
 import Logo from './assets/img/logo.png';
 
 const Maps = params => {
+
+	function getMapsUrl() {
+	  const mapsUrls = ["https://arwildo.com/iframes/moon"]
+
+	  return mapsUrls[0]
+	}
+
 	return (
     <div>
       <Transition
@@ -16,7 +24,7 @@ const Maps = params => {
         leaveTo="opacity-0 scale-95"
       >
         {params.mapsOpen && (
-          <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-center w-8/12 w-screen  max-w-screen-xl">
+          <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-center w-screen max-w-screen-xl">
             <div className="rounded-lg shadow-md">
               <div
                 className="rounded-lg bg-white shadow-xs overflow-hidden"
@@ -56,7 +64,14 @@ const Maps = params => {
                   </div>
                 </div>
                 <div className="px-2 pt-2 pb-3">
-                  {/* Insert maps here */}
+
+                <Iframe url={getMapsUrl()}
+                        id="myId"
+                        height="450px"
+                        className="w-full"
+                        display="initial"
+                        position="relative"/>
+
                 </div>
                 <div>
                   <a
