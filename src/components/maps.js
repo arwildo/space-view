@@ -6,13 +6,13 @@ import Logo from './assets/img/logo.png';
 const Maps = (params) => {
 	function getMapsUrl(params) {
 		if (params.moonOpen) {
-		  return 'https://arwildo.com/iframes/moon';
+		  return 'https://arwildo.com/space-view/moon/';
 		}
 		else if (params.marsOpen) {
-		  return 'https://arwildo.com/iframes/mars';
+		  return 'https://arwildo.com/space-view/mars/';
 		}
 		else {
-		  return 'https://arwildo.com/iframes/sky';
+		  return 'https://arwildo.com/space-view/sky/';
     }
 	}
 
@@ -20,7 +20,7 @@ const Maps = (params) => {
 	  params.setMapsOpen(false);
 	  params.setMoonOpen(false);
 	  params.setMarsOpen(false);
-	  params.setskyOpen(false);
+	  params.setSkyOpen(false);
 	}
 
 	return (
@@ -36,7 +36,7 @@ const Maps = (params) => {
 			>
 				{params.mapsOpen && (
 					<div className="absolute shadow-md top-0 h-screen w-screen max-w-screen-xl xl:max-h-full">
-            <div className="absolute top-0 right-0 mr-4 mt-2">
+            <div className="absolute top-0 right-0 mr-16 mt-2">
               <button
                 type="button"
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none bg-white focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
