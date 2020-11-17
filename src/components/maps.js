@@ -36,7 +36,7 @@ const Maps = (params) => {
 			>
 				{params.mapsOpen && (
 					<div className="absolute shadow-md top-0 h-screen w-screen max-w-screen-xl xl:max-h-full">
-            <div className="absolute top-0 right-0 mr-16 mt-4">
+            <div className="absolute top-0 right-0 mr-3 mt-14">
               <button
                 type="button"
                 className="inline-flex items-center justify-center p-2 rounded-sm text-gray-500 hover:text-gray-500 hover:bg-gray-100 focus:outline-none bg-white focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
