@@ -28,6 +28,23 @@ export default function(props) {
 
   // Maps 
 	const [ mapsOpen, setMapsOpen ] = useState(false);
+	const [ moonOpen, setMoonOpen ] = useState(false);
+	const [ marsOpen, setMarsOpen ] = useState(false);
+	const [ skyOpen, setSkyOpen ] = useState(false);
+
+  // Maps runner funcs
+	function runMoonMap() {
+	  setMapsOpen(true);
+	  setMoonOpen(true);
+	}
+	function runMarsMap() {
+	  setMapsOpen(true);
+	  setMarsOpen(true);
+	}
+	function runSkyMap() {
+	  setMapsOpen(true);
+	  setSkyOpen(true);
+	}
 
 	return (
 		<div className="relative bg-white overflow-hidden">
@@ -224,7 +241,7 @@ export default function(props) {
 									<a
 										href="#"
 										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-										onClick={() => setMapsOpen(true)}
+										onClick={() => runMoonMap()}
 									>
 										<img className="w-6 mr-3" src={MoonIcon} />
 										Moon
@@ -234,6 +251,7 @@ export default function(props) {
 									<a
 										href="#"
 										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+										onClick={() => runMarsMap()}
 									>
 										<img className="w-6 mr-3" src={MarsIcon} />
 										Mars
@@ -243,6 +261,7 @@ export default function(props) {
 									<a
 										href="#"
 										className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-blue-200 hover:text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-400 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+										onClick={() => runSkyMap()}
 									>
 										<img className="w-6 mr-3" src={SkyIcon} />
 										Sky
@@ -251,7 +270,11 @@ export default function(props) {
 							</div>
 						</div>
 					</main>
-          <Maps mapsOpen={mapsOpen} setMapsOpen={setMapsOpen} />
+          <Maps mapsOpen={mapsOpen} setMapsOpen={setMapsOpen}
+                moonOpen={moonOpen} setMoonOpen={setMoonOpen} 
+                marsOpen={marsOpen} setMarsOpen={setMarsOpen}
+                skyOpen={skyOpen} setSkyOpen={setSkyOpen}
+          />
 				</div>
 			</div>
 
