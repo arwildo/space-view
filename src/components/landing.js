@@ -47,7 +47,7 @@ export default function(props) {
 	}
 
 	return (
-		<div className="relative bg-white overflow-hidden">
+		<div className="max-w-screen-xl relative bg-white overflow-hidden">
 			<div className="max-w-screen-xl mx-auto">
 				<div className="relative z-10 pb-8 bg-gray-200 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-56 xl:pb-32">
 					<svg
@@ -109,14 +109,16 @@ export default function(props) {
 									About
 								</a>
 								<a
-									href="#"
+									href="https://api.nasa.gov/"
 									className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+									rel="nofollow"
 								>
 									Nasa API
 								</a>
 								<a
-									href="#"
+									href="https://developers.google.com/maps/documentation"
 									className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+									rel="nofollow"
 								>
 									Google API
 								</a>
@@ -229,7 +231,7 @@ export default function(props) {
 						<div className="sm:text-center lg:text-left">
 							<h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
 								Map to view
-								<br className="xl:hidden" />
+								<br />
 								<span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-teal-400 font-black">Space objects</span>
 							</h2>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
