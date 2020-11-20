@@ -10,7 +10,7 @@ const News = () => {
 
   // Article fetching
   const [article, setArticle] = useState(null);
-  const newsApi = "https://api.nasa.gov/planetary/apod?api_key=DrZ0rvpXxkznekZtUtea1GbO2e6chwGx6aC0h6wN&date=2020-11-19";
+  const newsApi = "https://api.nasa.gov/planetary/apod?api_key=DrZ0rvpXxkznekZtUtea1GbO2e6chwGx6aC0h6wN";
 
   const fetchArticle = async() => {
     const response = await axios.get(newsApi)
