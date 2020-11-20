@@ -66,7 +66,7 @@ export default function(props) {
 										<img
 											className="h-8 w-auto sm:h-10"
 											src={Logo}
-											alt="Logo"
+                      alt="Space View Logo"
 										/>
 									</a>
 									<div className="-mr-2 flex items-center md:hidden">
