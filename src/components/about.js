@@ -36,7 +36,7 @@ const About = () => {
                   <div className="flex-grow ">
                     <h2 className=" text-xl title-font font-medium mb-3">NASA API</h2>
                     <p className="leading-relaxed text-sm text-justify">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna.
+                      Uses NASA Open APIs such as APOD (Today's Astronomy Image) and MRP (Mars Rover Photo).
                     </p>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ const About = () => {
                   <div className="flex-grow">
                     <h2 className=" text-xl title-font font-medium mb-3">Google API</h2>
                     <p className="leading-relaxed text-sm text-justify">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna.
+                      Uses javascript to create API queries that fetch mars, moon, and night sky images from Google Maps API endpoint.
                     </p>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ const About = () => {
                   <div className="flex-grow">
                     <h2 className=" text-xl title-font font-medium mb-3">Responsive Design</h2>
                     <p className="leading-relaxed text-sm text-justify">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna.
+                      Designed with React JS with Tailwind and custom CSS to create responsive UI that friendly to all platforms.
                     </p>
                   </div>
                 </div>
