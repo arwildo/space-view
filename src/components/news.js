@@ -115,8 +115,8 @@ const News = () => {
                     </p>
                     <div className="text-black font-bold text-xl">{article.title}</div>
                   </div>
-                  <img className="w-auto md:w-1/2 px-2 mx-auto" src={article.url}></img>
-                  <p className="text-grey-darker text-base mt-4 my-4">{article.explanation}</p>
+                  <img className="w-full px-2 mx-auto" src={article.url}></img>
+                  <p className="text-grey-darker text-base text-justify mt-4 my-4">{article.explanation}</p>
                   <div className="flex items-center">
                     <img className="w-10 h-10 rounded-full mr-4" src={article.url}></img>
                     <div className="text-sm">
