@@ -48,18 +48,18 @@ const News = () => {
   }
 
 	return (
-	<div className="flex max-w-screen-xl">
-    <div className="w-1/2 bg-gray-100">
+	<div className="sm:flex max-w-screen-xl">
+    <div className="sm:w-1/2 bg-gray-100">
       <div className="max-w-7xl mx-auto py-8 sm:pl-2 sm:pr-1 lg:pl-4 lg:pr-2">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-            <div className="px-4 py-5 border-xl border-gray-200 sm:px-6">
+            <div className="px-4 pt-5 pb-4 border-xl border-gray-200 sm:px-6">
               <p className="text-sm flex text-grey-dark items-center">
                 <img className="w-5 h-5 mr-2" src={NasaIcon}>
                 </img>
                 Mars Rover Photos
               </p>
-              <div className="text-black font-bold text-xl mb-2">Mars Surface Images</div>
+              <div className="text-black font-bold text-xl">Mars Surface Images</div>
             </div>
             {rover && 
               <>
@@ -88,7 +88,7 @@ const News = () => {
                     <div className="block w-full h-full bg-grey-dark bg-no-repeat bg-center bg-cover" style={getDivImg()}>
                     </div>
                   </div>
-                  <div className="w-full sm:w-1/3 h-32 md:h-48 px-2">
+                  <div className="w-full sm:w-1/3 h-32 md:h-48 px-2 mb-2">
                     <div className="block w-full h-full bg-grey-dark bg-no-repeat bg-center bg-cover" style={getDivImg()}>
                     </div>
                   </div>
@@ -99,24 +99,24 @@ const News = () => {
         </div>
       </div>
     </div>
-    <div className="w-1/2">
+    <div className="sm:w-1/2">
       <div className="bg-gray-100">
         <div className="max-w-7xl mx-auto py-8 sm:pl-1 sm:pr-2 lg:pl-2 lg:pr-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-              <div className="px-4 py-5 border-xl border-gray-200 sm:px-6">
+              <div className="px-4 pt-5 pb-4 border-xl border-gray-200 sm:px-6">
               {article && 
                 <>
-                  <div className="mb-8">
+                  <div className="mb-4">
                     <p className="text-sm text-grey-dark flex items-center">
                       <img className="w-5 h-5 mr-2" src={NasaIcon}>
                       </img>
                       Astronomy Picture of the Day
                     </p>
-                    <div className="text-black font-bold text-xl mb-8">{article.title}</div>
-                    <img className="w-auto md:w-1/2 mb-4 px-2" src={article.url}></img>
-                    <p className="text-grey-darker text-base mt-4">{article.explanation}</p>
+                    <div className="text-black font-bold text-xl">{article.title}</div>
                   </div>
+                  <img className="w-auto md:w-1/2 px-2" src={article.url}></img>
+                  <p className="text-grey-darker text-base mt-4 my-4">{article.explanation}</p>
                   <div className="flex items-center">
                     <img className="w-10 h-10 rounded-full mr-4" src={article.url}></img>
                     <div className="text-sm">
