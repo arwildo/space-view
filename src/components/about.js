@@ -12,12 +12,14 @@ const About = () => {
       <section className="max-w-screen-xl text-gray-200 bg-gray-900">
         <div className="max-w-6xl mx-auto px-5 py-24 ">
           <div className="text-center mb-20">
-            <img
-              className="h-8 w-auto sm:h-10"
-              src={Logo}
-              alt="Space View Logo"
-            />
-            <h1 className=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">SpaceV</h1>
+            <h1 className="title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">
+              <img
+                className="h-8 w-auto sm:h-10 m-auto"
+                src={Logo}
+                alt="Space View Logo"
+              />
+              SpaceV
+            </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Space View is a responsive React web app that design to explore the wonders of space objects like the moon, mars, and the night sky. Built with NASA and Google APIs.</p>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
