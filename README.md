@@ -3,7 +3,7 @@
   <img src="https://raw.githubusercontent.com/arwildo/space-view/master/src/components/assets/img/space-view.png" width="800">
 </p>
 <p align=center> 
-  <a href="https://arwildo.com/textul"><img src="https://arwildo.com/space-view/logo.png" width="16"> SpaceV - Space View</a>
+  <a href="https://arwildo.com/space-view/"><img src="https://arwildo.com/space-view/logo.png" width="16"> SpaceV - Space View</a>
  </p>
  
 Responsive React web app that design to explore the wonders of space objects like the moon, mars, and the night sky.  
