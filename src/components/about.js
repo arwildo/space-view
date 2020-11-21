@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
+import PropTypes from 'prop-types';
 
 import Logo from './assets/img/logo.png';
 import NasaIcon from './assets/img/nasaicon.png';
 import GoogleIcon from './assets/img/googleicon.png';
 import ReactIcon from './assets/img/reacticon.png';
 
-const About = () => {
+const About = forwardRef((props, newsRef) => {
+  const { name, value, description } = props;
 
 	return (
-    <div>
+    <div ref={newsRef}>
       <section className="max-w-screen-xl text-gray-200 bg-gray-900">
         <div className="max-w-6xl mx-auto px-5 py-24 ">
           <div className="text-center mb-20">
@@ -78,7 +80,19 @@ const About = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+});
+
+About.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.number,
+  description: PropTypes.string,
+};
+
+About.defaultProps = {
+  name: '',
+  value: 0,
+  description: '',
+};
 
 export default About

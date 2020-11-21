@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 import axios from 'axios';
 import { Transition } from '@headlessui/react';
-import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import MoonBG from './assets/img/moonbg.png';
 import NasaIcon from './assets/img/nasaicon.png';
 
-const News = () => {
+const News = forwardRef((props, newsRef) => {
+  const { name, value, description } = props;
 
   // Article fetching
   const [article, setArticle] = useState(null);
@@ -23,7 +24,7 @@ const News = () => {
       setArticle(response.data)
     }
     catch(err) {
-      console.log("Article data today for isn't available yet, displaying article data from yesterday temporarily till it becomes available.")
+      console.log("Article data for today isn't available yet, displaying article data from yesterday temporarily till it becomes available.")
       const response = await axios.get(newsApiAlternative)
       setArticle(response.data)
     }
@@ -60,8 +61,8 @@ const News = () => {
   }
 
 	return (
-	<div className="sm:flex max-w-screen-xl">
-    <div className="sm:w-1/2 bg-gray-100">
+	<div className="sm:flex max-w-screen-xl bg-gray-100" ref={newsRef}>
+    <div className="sm:w-1/2">
       <div className="max-w-7xl mx-auto py-8 sm:pl-2 sm:pr-1 lg:pl-4 lg:pr-2">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white shadow overflow-hidden sm:rounded-lg">
@@ -112,40 +113,50 @@ const News = () => {
       </div>
     </div>
     <div className="sm:w-1/2">
-      <div className="bg-gray-100">
-        <div className="max-w-7xl mx-auto py-8 sm:pl-1 sm:pr-2 lg:pl-2 lg:pr-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-              <div className="px-4 pt-5 pb-4 border-xl border-gray-200 sm:px-6">
-              {article && 
-                <>
-                  <div className="mb-4">
-                    <p className="text-sm text-grey-dark flex items-center">
-                      <img className="w-5 h-5 mr-2" src={NasaIcon}>
-                      </img>
-                      Astronomy Picture of the Day
-                    </p>
-                    <div className="text-black font-bold text-xl">{article.title}</div>
+      <div className="max-w-7xl mx-auto py-8 sm:pl-1 sm:pr-2 lg:pl-2 lg:pr-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+            <div className="px-4 pt-5 pb-4 border-xl border-gray-200 sm:px-6">
+            {article && 
+              <>
+                <div className="mb-4">
+                  <p className="text-sm text-grey-dark flex items-center">
+                    <img className="w-5 h-5 mr-2" src={NasaIcon}>
+                    </img>
+                    Astronomy Picture of the Day
+                  </p>
+                  <div className="text-black font-bold text-xl">{article.title}</div>
+                </div>
+                <img className="w-full px-2 mx-auto" src={article.url}></img>
+                <p className="text-grey-darker text-base text-justify mt-4 my-4">{article.explanation}</p>
+                <div className="flex items-center">
+                  <img className="w-10 h-10 rounded-full mr-4" src={article.url}></img>
+                  <div className="text-sm">
+                    <p className="text-black leading-none">{article.copyright}</p>
+                    <p className="text-grey-dark">{article.date}</p>
                   </div>
-                  <img className="w-full px-2 mx-auto" src={article.url}></img>
-                  <p className="text-grey-darker text-base text-justify mt-4 my-4">{article.explanation}</p>
-                  <div className="flex items-center">
-                    <img className="w-10 h-10 rounded-full mr-4" src={article.url}></img>
-                    <div className="text-sm">
-                      <p className="text-black leading-none">{article.copyright}</p>
-                      <p className="text-grey-dark">{article.date}</p>
-                    </div>
-                  </div>
-                </>
-              }
-              </div>
+                </div>
+              </>
+            }
             </div>
           </div>
         </div>
       </div>
     </div>
 	</div>
-  )
-}
+  );
+});
+
+News.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.number,
+  description: PropTypes.string,
+};
+
+News.defaultProps = {
+  name: '',
+  value: 0,
+  description: '',
+};
 
 export default News

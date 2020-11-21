@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -97,14 +96,14 @@ export default function(props) {
 							</div>
 							<div className="hidden md:block md:ml-10 md:pr-4">
 								<a
-									href="#"
-									className="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+									className="cursor-pointer font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+									onClick={props.scrollToNews}
 								>
 									News
 								</a>
 								<a
-									href="#"
-									className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+									className="cursor-pointer ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+									onClick={props.scrollToAbout}
 								>
 									About
 								</a>
@@ -184,30 +183,32 @@ export default function(props) {
 										</div>
 										<div className="px-2 pt-2 pb-3">
 											<a
-												href="#"
-												className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+												className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
 												role="menuitem"
+                        onClick={props.scrollToNews}
 											>
 												News
 											</a>
 											<a
-												href="#"
-												className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+												className="cursor-pointer mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
 												role="menuitem"
+                        onClick={props.scrollToAbout}
 											>
 												About
 											</a>
 											<a
-												href="#"
+                        href="https://api.nasa.gov/"
 												className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
 												role="menuitem"
+                        rel="nofollow"
 											>
 												Nasa API
 											</a>
 											<a
-												href="#"
+                        href="https://developers.google.com/maps/documentation"
 												className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
 												role="menuitem"
+                        rel="nofollow"
 											>
 												Google API
 											</a>
