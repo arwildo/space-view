@@ -12,10 +12,22 @@ const News = () => {
   const [article, setArticle] = useState(null);
   const newsApi = "https://api.nasa.gov/planetary/apod?api_key=DrZ0rvpXxkznekZtUtea1GbO2e6chwGx6aC0h6wN";
 
-  const fetchArticle = async() => {
-    const response = await axios.get(newsApi)
+  // Alternative article
+  let date = new Date()
+  let yesterday = date.getFullYear() + "-" + date.getMonth()+ "-" + (date.getDate() - 1)
+  const newsApiAlternative = newsApi + "&date=" + yesterday;
 
-    setArticle(response.data)
+  const fetchArticle = async() => {
+    try {
+      const response = await axios.get(newsApi)
+      setArticle(response.data)
+    }
+    catch(err) {
+      console.log("Article data today for isn't available yet, displaying article data from yesterday temporarily till it becomes available.")
+      const response = await axios.get(newsApiAlternative)
+      setArticle(response.data)
+    }
+
   }
 
   // Curiosity rover fetching
@@ -23,9 +35,9 @@ const News = () => {
   const roverApi = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=mast&api_key=DrZ0rvpXxkznekZtUtea1GbO2e6chwGx6aC0h6wN";
 
   const fetchRover = async() => {
-    const response = await axios.get(roverApi)
+    const response = await axios.get(roverApi);
 
-    setRover(response.data)
+    setRover(response.data);
   };
 
   // Run all fetch

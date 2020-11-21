@@ -4,7 +4,6 @@ import Logo from './assets/img/logo.png';
 
 const Footer = () => {
 	function getYear() {
-	  console.log("GEt --------------");
 		return new Date().getFullYear();
 	}
 
