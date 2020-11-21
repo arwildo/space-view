@@ -20,7 +20,7 @@ const Index = () => {
     aboutRef.current.scrollIntoView({behavior: "smooth"});
   }
 
-	return [<Landing scrollToNews={scrollToNews} scrollToAbout={scrollToAbout} />, <News ref={newsRef} />, <About ref={aboutRef} />, <Footer />]
+	return [<Landing scrollToNews={scrollToNews} scrollToAbout={scrollToAbout} />, <News ref={newsRef} />, <About ref={aboutRef} />, <Footer scrollToNews={scrollToNews} scrollToAbout={scrollToAbout} />]
 };
 
 const rootElement = document.getElementById("root");

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Logo from './assets/img/logo.png';
 
-const Footer = () => {
+const Footer = (props) => {
 	function getYear() {
 		return new Date().getFullYear();
 	}
@@ -38,8 +38,8 @@ const Footer = () => {
           </div>
             <div className="flex mt-4 md:m-0">
               <div className="-mx-4">
-                <a href="#" className="px-4 text-sm">About</a>
-                <a href="#" className="px-4 text-sm">News</a>
+                <a className="cursor-pointer px-4 text-sm" onClick={props.scrollToAbout}>About</a>
+                <a className="cursor-pointer px-4 text-sm" onClick={props.scrollToNews}>News</a>
                 <a href="https://arwildo.com" className="px-4 text-sm">Contact</a>
               </div>
             </div>
