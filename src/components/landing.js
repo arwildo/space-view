@@ -110,20 +110,23 @@ export default function(props) {
 								<a
 									href="https://api.nasa.gov/"
 									className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-									rel="nofollow"
+									rel="nofollow noopener"
+									target="_blank"
 								>
 									Nasa API
 								</a>
 								<a
 									href="https://developers.google.com/maps/documentation"
 									className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-									rel="nofollow"
+									rel="nofollow noopener"
+									target="_blank"
 								>
 									Google API
 								</a>
 								<a
 									href="https://arwildo.com"
 									className="ml-8 font-medium text-blue-500 hover:text-blue-900 transition duration-150 ease-in-out"
+									target="_blank"
 								>
 									Author
 								</a>
@@ -200,7 +203,8 @@ export default function(props) {
                         href="https://api.nasa.gov/"
 												className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
 												role="menuitem"
-                        rel="nofollow"
+                        rel="nofollow noopener"
+                        target="_blank"
 											>
 												Nasa API
 											</a>
@@ -208,7 +212,8 @@ export default function(props) {
                         href="https://developers.google.com/maps/documentation"
 												className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
 												role="menuitem"
-                        rel="nofollow"
+                        rel="nofollow noopener"
+                        target="_blank"
 											>
 												Google API
 											</a>
@@ -218,6 +223,7 @@ export default function(props) {
 												href="https://arwildo.com"
 												className="block w-full px-5 py-3 text-center font-medium text-blue-500 bg-gray-50 hover:bg-gray-100 hover:text-blue-600 focus:outline-none focus:bg-gray-100 focus:text-blue-600 transition duration-150 ease-in-out"
 												role="menuitem"
+                        target="_blank"
 											>
 												Author
 											</a>

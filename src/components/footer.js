@@ -40,7 +40,7 @@ const Footer = (props) => {
               <div className="-mx-4">
                 <a className="cursor-pointer px-4 text-sm" onClick={props.scrollToAbout}>About</a>
                 <a className="cursor-pointer px-4 text-sm" onClick={props.scrollToNews}>News</a>
-                <a href="https://arwildo.com" className="px-4 text-sm">Contact</a>
+                <a href="https://arwildo.com" className="px-4 text-sm" target="_blank">Contact</a>
               </div>
             </div>
         </div>
