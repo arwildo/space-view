@@ -61,7 +61,7 @@ const News = forwardRef((props, newsRef) => {
   }
 
 	return (
-	<div className="sm:flex max-w-screen-xl bg-gray-100" ref={newsRef}>
+	<div className="sm:flex bg-gray-100" ref={newsRef}>
     <div className="sm:w-1/2">
       <div className="max-w-7xl mx-auto py-8 sm:pl-2 sm:pr-1 lg:pl-4 lg:pr-2">
         <div className="max-w-4xl mx-auto">

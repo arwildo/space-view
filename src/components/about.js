@@ -11,7 +11,7 @@ const About = forwardRef((props, newsRef) => {
 
 	return (
     <div ref={newsRef}>
-      <section className="max-w-screen-xl text-gray-200 bg-gray-900">
+      <section className="text-gray-200 bg-gray-900">
         <div className="max-w-6xl mx-auto px-5 py-24 ">
           <div className="text-center mb-20">
             <h1 className="title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">

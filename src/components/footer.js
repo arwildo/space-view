@@ -8,7 +8,7 @@ const Footer = (props) => {
 	}
 
 	return (
-    <footer className="max-w-screen-xl flex justify-center px-4 text-gray-100 bg-gray-800">
+    <footer className="flex justify-center px-4 text-gray-100 bg-gray-800">
       <div className="container py-6">
         <h1 className="text-center text-lg font-bold lg:text-2xl">
           Join 31,000+ other and never <br />miss out on space news.

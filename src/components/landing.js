@@ -46,7 +46,7 @@ export default function(props) {
 	}
 
 	return (
-		<div className="max-w-screen-xl relative bg-white overflow-hidden">
+		<div className="relative bg-white overflow-hidden">
 			<div className="mx-auto">
 				<div className="relative z-10 pb-8 bg-gray-200 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-56 xl:pb-32">
 					<svg
@@ -242,8 +242,8 @@ export default function(props) {
 								<span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-teal-400 font-black">Space objects</span>
 							</h2>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Web app to explore the wonders of space objects like moon, mars, and the night sky. 
-                Built with Nasa and Google APIs.
+                Web app to explore space objects like the moon,<br/>
+                mars, and the night sky through an interactive map view.<br/>
 							</p>
 							<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 								<div className="mt-3 sm:mt-0 sm:ml-3">
