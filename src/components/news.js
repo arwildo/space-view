@@ -101,10 +101,15 @@ const News = forwardRef((props, newsRef) => {
                     <div className="block w-full h-full bg-grey-dark bg-no-repeat bg-center bg-cover" style={getDivImg()}>
                     </div>
                   </div>
-                  <div className="w-full sm:w-1/3 h-32 md:h-48 px-2 mb-2">
+                  <div className="w-full sm:w-1/3 h-32 md:h-48 px-2">
                     <div className="block w-full h-full bg-grey-dark bg-no-repeat bg-center bg-cover" style={getDivImg()}>
                     </div>
                   </div>
+                </div>
+                <div className="px-2 pt-2 pb-2 float-left">
+                  <p className="text-xs flex text-grey-dark items-center italic">
+                    New images on each page load.
+                  </p>
                 </div>
               </>
             }
