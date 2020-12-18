@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
+import ReactGA from 'react-ga';
 
 import Landing from "./components/landing";
 import News from "./components/news";
@@ -23,5 +24,6 @@ const Index = () => {
 	return [<Landing scrollToNews={scrollToNews} scrollToAbout={scrollToAbout} />, <News ref={newsRef} />, <About ref={aboutRef} />, <Footer scrollToNews={scrollToNews} scrollToAbout={scrollToAbout} />]
 };
 
+ReactGA.initialize('UA-51659765-2');
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Index />, rootElement);
