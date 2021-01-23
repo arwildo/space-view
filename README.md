@@ -1,4 +1,4 @@
-# <img src="https://arwildo.com/space-view/logo.png" width="32"></img> Space View
+<p align=center><a href="https://arwildo.com/space-view/"><img src="https://arwildo.com/space-view/logo.png" width="32"></img></a></p> 
 <p align=center> 
   <img src="https://raw.githubusercontent.com/arwildo/space-view/master/src/components/assets/img/space-view.png" width="800">
 </p>
