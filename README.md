@@ -5,9 +5,11 @@
 <p align=center> 
   <a href="https://arwildo.com/space-view/"><img src="https://arwildo.com/space-view/logo.png" width="16"></img> SpaceV - Space View</a>
  </p>
- 
+
+<p style="text-align: justify;">
 Responsive React web app that design to explore the wonders of space objects like the moon, mars, and the night sky.  
 Powered by with NASA and Google APIs.
+</p>
 
 
 ### Built With
