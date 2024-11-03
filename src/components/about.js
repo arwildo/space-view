@@ -1,10 +1,10 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 
-import Logo from './assets/img/logo.png';
-import NasaIcon from './assets/img/nasaicon.png';
-import GoogleIcon from './assets/img/googleicon.png';
-import ReactIcon from './assets/img/reacticon.png';
+import Logo from './assets/img/logo.webp';
+import NasaIcon from './assets/img/nasaicon.webp';
+import GoogleIcon from './assets/img/googleicon.webp';
+import ReactIcon from './assets/img/reacticon.webp';
 
 const About = forwardRef((props, newsRef) => {
   const { name, value, description } = props;

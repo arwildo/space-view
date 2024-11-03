@@ -3,13 +3,13 @@ import { Transition } from '@headlessui/react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
-import Logo from './assets/img/logo.png';
-import MoonBG from './assets/img/moonbg.png';
-import MarsBG from './assets/img/marsbg.png';
-import SkyBG from './assets/img/skybg.png';
-import MoonIcon from './assets/img/moon.png';
-import MarsIcon from './assets/img/mars.png';
-import SkyIcon from './assets/img/sky.png';
+import Logo from './assets/img/logo.webp';
+import MoonBG from './assets/img/moonbg.webp';
+import MarsBG from './assets/img/marsbg.webp';
+import SkyBG from './assets/img/skybg.webp';
+import MoonIcon from './assets/img/moon.webp';
+import MarsIcon from './assets/img/mars.webp';
+import SkyIcon from './assets/img/sky.webp';
 
 import Maps from './maps'
 

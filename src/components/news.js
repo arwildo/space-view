@@ -1,10 +1,8 @@
 import React, { useState, useEffect, forwardRef } from 'react';
 import axios from 'axios';
-import { Transition } from '@headlessui/react';
 import PropTypes from 'prop-types';
 
-import MoonBG from './assets/img/moonbg.png';
-import NasaIcon from './assets/img/nasaicon.png';
+import NasaIcon from './assets/img/nasaicon.webp';
 
 const News = forwardRef((props, newsRef) => {
   const { name, value, description } = props;

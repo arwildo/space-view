@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from './assets/img/logo.png';
+import Logo from './assets/img/logo.webp';
 
 const Footer = (props) => {
 	function getYear() {

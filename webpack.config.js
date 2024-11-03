@@ -26,10 +26,10 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader", "postcss-loader",
-          ],
+        ],
       },
        {
-         test: /\.(png|svg|jpg|gif)$/,
+         test: /\.(png|svg|jpg|gif|webp)$/,
          use: [
            'file-loader?name=[name].[ext]',
          ],
@@ -44,7 +44,7 @@ module.exports = {
     new HtmlWebPackPlugin({
     template: "./src/index.html",
     filename: "./index.html",
-    favion: "src/components/assets/img/logo.png"
+    favion: "src/components/assets/img/logo.webp"
   }),
 ]
 };

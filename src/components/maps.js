@@ -1,18 +1,16 @@
 import React from 'react';
 import { Transition } from '@headlessui/react';
 
-import Logo from './assets/img/logo.png';
-
 const Maps = (params) => {
 	function getMapsUrl(params) {
 		if (params.moonOpen) {
-		  return 'https://arwildo.com/space-view/moon/';
+		  return 'https://arwildo.com/iframes/moon/';
 		}
 		else if (params.marsOpen) {
-		  return 'https://arwildo.com/space-view/mars/';
+		  return 'https://arwildo.com/iframes/mars/';
 		}
 		else {
-		  return 'https://arwildo.com/space-view/sky/';
+		  return 'https://arwildo.com/iframes/sky/';
     }
 	}
 
